@@ -377,6 +377,34 @@ color: var(--brand-color);
 /* ============= Hover and focus ============= */
 
 
+/* ============= SPRITE.SVG ============= */
+
+.text-icon {
+    width: 264px;
+    height: 112px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+
+    text-align: center;
+
+    border-radius: 4px;
+    background-color: var(--color3);
+}
+
+.icon {
+
+    width: 64px;
+    height: 64px;
+    left: 100px;
+    top: 24px;
+
+}
+
+/* ============= SPRITE.SVG ============= */
+
+
 .main-pointer {
     padding-bottom: 192px;
 
@@ -423,8 +451,8 @@ color: var(--brand-color);
     margin-right: auto;
 
     background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.8),
-    rgba(47, 48, 58, 0.8)),
+    rgba(47, 48, 58, 0.7),
+    rgba(47, 48, 58, 0.7)),
     url("../images4/hero.jpg");
 
     background-repeat: no-repeat;
