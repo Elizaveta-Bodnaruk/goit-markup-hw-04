@@ -399,8 +399,36 @@ color: var(--brand-color);
     height: 64px;
     left: 100px;
     top: 24px;
-
 }
+
+.text-title-icon {
+    width: 40px;
+    height: 40px;
+
+    padding: 12px 12px;
+
+    border-radius: 50%;
+    background-color: var(--color1);
+}
+
+.text-title-icon:not(:last-child) {
+    margin-right: 24px;
+}
+
+.icon2 {    
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 12px;
+}
+
+.icon-flex {
+    display: flex;
+    margin-right: 16px;
+    margin-bottom: 36px;
+    margin-left: 16px;
+}
+
 
 /* ============= SPRITE.SVG ============= */
 
