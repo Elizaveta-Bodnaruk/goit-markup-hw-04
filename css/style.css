@@ -8,8 +8,7 @@
     --color4:#FFFFFF;
     --color5: #404BBF;
     --color6: #E7E9FC;
-    --flex-element-gap:10px;
-    --flex-shadow:0px 1px 6px rgba(46, 47, 66, 0.08);
+    --flex-elements:#8E8F99;
 }
 
 /* ============= Додаткові параметри скидання стилів ============= */
@@ -65,6 +64,7 @@ body {
     padding-bottom: 24px;
 
     border-bottom: 0.5px solid var(--color3);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-menu {
@@ -266,10 +266,20 @@ margin-right: 24px;
 .flex-content {
     padding: 32px 16px;
 
-    border: 0.5px solid var(--color3);
+    border: 1px solid var(--color3);
     border-top: none;
 }
 
+.menu {
+    display: block;
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.menu:hover ,
+.menu:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 /* Test-container img */
 
@@ -394,11 +404,15 @@ color: var(--brand-color);
 }
 
 .icon {
-
     width: 64px;
     height: 64px;
     left: 100px;
     top: 24px;
+}
+
+.icon:hover ,
+.icon:focus {
+    stroke: var(--color1);
 }
 
 .text-title-icon {
@@ -415,6 +429,11 @@ color: var(--brand-color);
     margin-right: 24px;
 }
 
+.text-title-icon:hover ,
+.text-title-icon:focus {
+    stroke: var(--color1);
+}
+
 .icon2 {    
     width: 16px;
     height: 16px;
@@ -429,6 +448,122 @@ color: var(--brand-color);
     margin-left: 16px;
 }
 
+.section-bottom-div {
+    display: flex;
+
+    margin-left: 156px;
+
+    width: 208px;
+    height: 80px;
+    left: 540px;
+}
+
+.footer-bottom {
+    margin-right: 120px;
+}
+
+.footer-icon-text {
+    margin-bottom: 16px;
+}
+
+.footer-icon-flex {
+    display: flex;
+}
+
+.bottom-icon {
+    width: 40px;
+    height: 40px;
+
+    padding: 8px 8px;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bottom-icon:not(:last-child) {
+    margin-right: 16px;
+}
+
+.icon3:hover ,
+.icon3:focus {
+    border: 1px solid var(--color1);
+    border: 4px;
+}
+
+.bottom-icon:hover ,
+.bottom-icon:focus {
+    stroke: var(--color1);
+}
+
+.footer-icon-text {
+    width: 96px;
+    height: 24px;
+    top: 3001px;
+    left: 540px;
+}
+
+.icon3 {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+
+    fill: currentColor;
+}
+
+.clients-h2 {
+    margin-bottom: 72px;
+    margin-right: 627px;
+    margin-left: 625px;
+
+    width: 183px;
+    height: 40px;
+
+    text-align: center;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.clients-title-li:not(:last-child) {
+    margin-right: 24px;
+}
+
+.clients-section {
+    margin-top: 120px;
+    margin-right: 156px;
+    margin-bottom: 120px;
+    margin-left: 156px;
+}
+
+.clients-section-title {
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.clients-title-li {
+    width: 168px;
+    height: 88px;
+
+    box-sizing: border-box;
+    border: 1px solid var(--flex-elements);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clients-icon {
+    width: 104px;
+    height: 56px;
+    top: 16px;
+    left: 32px;
+
+    margin: 16px 32px;
+}
 
 /* ============= SPRITE.SVG ============= */
 
@@ -451,12 +586,11 @@ color: var(--brand-color);
 
     color: var(--color4);
     background-color: var(--color1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
  }
 
-.main-pointer:hover {
-    background-color: var(--color5);
-}
-
+.main-pointer:hover ,
 .main-pointer:focus {
     background-color: var(--color5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -555,6 +689,7 @@ color: var(--brand-color);
     align-items: center;
 
     background-color: var(--color4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .secondary-text h2 {
@@ -627,16 +762,17 @@ color: var(--brand-color);
     color: var(--color1);
     border: 1px solid var(--color6);
     background-color: var(--color3);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pointer:hover {
     color: var(--color4);
     background-color: var(--color1);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pointer:focus {
     background-color: var(--color1);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pointer { cursor: pointer; } 
