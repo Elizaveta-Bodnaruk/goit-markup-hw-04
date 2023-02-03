@@ -195,12 +195,18 @@ margin-left: 40px;
     width: 264px;
 }
 
-.bottom {
+.footer {
     padding-top: 100px;
     padding-bottom: 100px;
+}
 
-    left: 0px;
-    top: 2283px;
+.footer-container {
+    display: flex;
+
+}
+
+.style {
+    margin-right: 120px;
 }
 
 .bottom-text {
@@ -209,13 +215,6 @@ margin-left: 40px;
     left: 156px;
     top: 2421px;
 }
-
-.footer-bottom {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 
 /* ============= Позіціонування контенту index.html =============*/
@@ -273,7 +272,7 @@ margin-right: 24px;
 .menu {
     display: block;
 
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+   
 }
 
 .menu:hover ,
@@ -390,14 +389,12 @@ color: var(--brand-color);
 /* ============= SPRITE.SVG ============= */
 
 .text-icon {
-    width: 264px;
     height: 112px;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
     margin-bottom: 8px;
 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 4px;
     background-color: var(--color3);
@@ -408,11 +405,6 @@ color: var(--brand-color);
     height: 64px;
     left: 100px;
     top: 24px;
-}
-
-.icon:hover ,
-.icon:focus {
-    stroke: var(--color1);
 }
 
 .text-title-icon {
@@ -434,6 +426,18 @@ color: var(--brand-color);
     stroke: var(--color1);
 }
 
+.icon-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 12px;
+}
+
+.icon-flex-link:hover {
+    background-color: var(--color1);
+}
+
 .icon2 {    
     width: 16px;
     height: 16px;
@@ -441,33 +445,9 @@ color: var(--brand-color);
     left: 12px;
 }
 
-.icon-flex {
-    display: flex;
-    margin-right: 16px;
-    margin-bottom: 36px;
-    margin-left: 16px;
-}
-
-.section-bottom-div {
-    display: flex;
-
-    margin-left: 156px;
-
-    width: 208px;
-    height: 80px;
-    left: 540px;
-}
-
-.footer-bottom {
-    margin-right: 120px;
-}
-
 .footer-icon-text {
     margin-bottom: 16px;
-}
-
-.footer-icon-flex {
-    display: flex;
+    color: var(--color4);
 }
 
 .bottom-icon {
@@ -502,6 +482,10 @@ color: var(--brand-color);
     left: 540px;
 }
 
+.footer-ul {
+    display: flex;
+}
+
 .icon3 {
     width: 24px;
     height: 24px;
@@ -511,17 +495,15 @@ color: var(--brand-color);
     fill: currentColor;
 }
 
+.clients {
+    padding: 120px 156px;
+}
+
 .clients-h2 {
     margin-bottom: 72px;
-    margin-right: 627px;
-    margin-left: 625px;
-
-    width: 183px;
-    height: 40px;
 
     text-align: center;
     
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.03em;
@@ -531,38 +513,31 @@ color: var(--brand-color);
     margin-right: 24px;
 }
 
-.clients-section {
-    margin-top: 120px;
-    margin-right: 156px;
-    margin-bottom: 120px;
-    margin-left: 156px;
-}
-
 .clients-section-title {
     padding: 0px;
-
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
 }
 
 .clients-title-li {
-    width: 168px;
-    height: 88px;
-
-    box-sizing: border-box;
-    border: 1px solid var(--flex-elements);
-    border-radius: 4px;
-    cursor: pointer;
+    width: calc(100% - 5 * 24px);
 }
 
 .clients-icon {
-    width: 104px;
-    height: 56px;
-    top: 16px;
-    left: 32px;
+    border: 1px solid var(--flex-elements);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
+}
 
-    margin: 16px 32px;
+.clients-link {
+    height: 88px;
+    cursor: pointer;
+}
+
+.clients-link:hover ,
+.clients-link:focus {
+    fill: var(--color1);
 }
 
 /* ============= SPRITE.SVG ============= */
@@ -645,8 +620,7 @@ color: var(--brand-color);
 
 /* ============= Feauters section ============= */
 
-.text h3 { 
-    font-weight: 700;
+.text h2 { 
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -723,11 +697,11 @@ color: var(--brand-color);
     color: var(--color2);
 }
 
-.bottom {
+.footer {
     background-color: var(--brand-color);
 }
 
-.bottom p {
+.bottom-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -762,17 +736,13 @@ color: var(--brand-color);
     color: var(--color1);
     border: 1px solid var(--color6);
     background-color: var(--color3);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.pointer:hover {
+.pointer:hover ,
+.pointer:focus  {
     color: var(--color4);
     background-color: var(--color1);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.pointer:focus {
-    background-color: var(--color1);
 }
 
 .pointer { cursor: pointer; } 
