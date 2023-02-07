@@ -126,6 +126,11 @@ margin-left: 40px;
 .text-title .title {
     margin-bottom: 8px;
 
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
     width: 264px;
 }
 
@@ -437,11 +442,12 @@ color: var(--brand-color);
     height: 100%;
 
     border-radius: 50%;
+    background-color: var(--color1);
 }
 
 .icon-flex-link:hover ,
 .icon-flex-link:focus {
-    background-color: var(--color1);
+    background-color: #404BBF;
 }
 
 .icon2 {    
@@ -472,11 +478,12 @@ color: var(--brand-color);
     height: 100%;
 
     border-radius: 50%;
+    background-color: var(--color1);
 }
 
 .footer-icon-link:hover ,
 .footer-icon-link:focus {
-    background-color: var(--color1);
+    background-color: #31d0aa;
 }
 
 .icon3:hover ,
@@ -511,7 +518,7 @@ color: var(--brand-color);
 }
 
 .clients {
-    padding: 120px 156px;
+    padding: 120px 0px;
 }
 
 .clients-h2 {
@@ -537,26 +544,22 @@ color: var(--brand-color);
     width: calc(100% - 5 * 24px);
 }
 
-.clients-icon {
-    border: 1px solid var(--flex-elements);
-    border-radius: 4px;
-    width: 168px;
-    height: 88px;
-    padding: 16px 32px;
-}
-
 .clients-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    cursor: pointer;
+    height: 88px;
+
+    border: 1px solid var(--flex-elements);
+    border-radius: 4px;
+    fill: #8e8f99 ;
 }
 
 .clients-link:hover ,
 .clients-link:focus {
     fill: var(--color1);
+    border-color: var(--color1);
 }
 
 /* ============= SPRITE.SVG ============= */
@@ -640,6 +643,8 @@ color: var(--brand-color);
 /* ============= Feauters section ============= */
 
 .text h2 { 
+    font-weight: 500;
+    font-style: normal;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -649,6 +654,8 @@ color: var(--brand-color);
 
 .text p {
     font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02;
 
@@ -658,7 +665,6 @@ color: var(--brand-color);
 .text-img h2 {
     text-align: center;
 
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -688,7 +694,6 @@ color: var(--brand-color);
 .secondary-text h2 {
     text-align: center;
 
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -699,8 +704,6 @@ color: var(--brand-color);
 .secondary-text h3 {
     margin-bottom: 8px;
 
-    font-weight: 700;
-    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
