@@ -263,6 +263,43 @@ margin-right: 24px;
     max-width: 100%;
 }
 
+/* Анімування тексту */
+
+.overlay {
+    position: absolute;
+    font-size: 14px;
+
+    left: 0;
+    top: 0;
+
+    height: 300px;
+    width: 100%;
+
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform 250ms linear;
+
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 164px;
+    padding-left: 32px;
+
+    color: rgba(244, 244, 253, 1);
+    background-color: rgba(77, 90, 229, 1);
+}
+
+.team-list-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu:hover .overlay,
+.menu:focus .overlay {
+    transform: translate(0, 0);
+}
+
+/* Анімування тексту */
+
 .flex-h3 {
     margin-bottom: 8px;
 }
@@ -276,8 +313,6 @@ margin-right: 24px;
 
 .menu {
     display: block;
-
-   
 }
 
 .menu:hover ,
@@ -483,7 +518,7 @@ color: var(--brand-color);
 
 .footer-icon-link:hover ,
 .footer-icon-link:focus {
-    background-color: #31d0aa;
+    background-color: rgba(49, 208, 170, 1);
 }
 
 .icon3:hover ,
